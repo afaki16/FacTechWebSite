@@ -1,0 +1,31 @@
+# FacTech
+
+> FacTech is a software company based in Bursa, Turkey, founded in 2026 by software engineers. It builds web applications, iOS and Android mobile apps, UI/UX designs and cloud systems, and provides cyber security and data analytics services. FacTech works in Turkish and English.
+
+## Company facts
+
+- Name: FacTech
+- Website: https://factech.app/
+- Location: Bursa, Turkey
+- Founded: 2026
+- Languages: Turkish, English
+- Email: info@factech.app
+- Phone: +90 535 702 79 18
+
+## Services
+
+- Web Development: responsive, fast, SEO-optimized and secure websites built with modern technologies.
+- Mobile App Development: native and cross-platform apps for iOS and Android.
+- UI/UX Design: user-centered, functional interface design.
+- Cloud Solutions: scalable, secure systems on AWS, Microsoft Azure and Google Cloud.
+- Cyber Security: security solutions including penetration testing and security audits.
+- Data Analytics: AI and machine-learning powered analytics.
+
+## Pages
+
+- [Ana sayfa (Türkçe)](https://factech.app/): Turkish homepage with services, about, FAQ and contact.
+- [Homepage (English)](https://factech.app/en/): English homepage with services, about, FAQ and contact.
+
+## Contact
+
+To start a project, email info@factech.app or call +90 535 702 79 18.
