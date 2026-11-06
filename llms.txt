@@ -1,6 +1,6 @@
 # FacTech
 
-> FacTech is a software company based in Bursa, Turkey, founded in 2026 by software engineers. It builds web applications, iOS and Android mobile apps, UI/UX designs and cloud systems, and provides cyber security and data analytics services. FacTech works in Turkish and English.
+> FacTech is a software company based in Bursa, Turkey, founded in 2026 by software engineer Alperen FAKI. It builds AI solutions (chatbots, AI assistants, LLM integrations, business process automation, machine learning models), web applications, iOS and Android mobile apps, UI/UX designs and cloud systems, and provides cyber security and data analytics services. FacTech works in Turkish and English and offers 24/7 support.
 
 ## Company facts
 
@@ -8,23 +8,30 @@
 - Website: https://factech.app/
 - Location: Bursa, Turkey
 - Founded: 2026
+- Founder: Alperen FAKI, Founder & Software Engineer (5+ years of software development experience)
 - Languages: Turkish, English
+- Support: 24/7
 - Email: info@factech.app
 - Phone: +90 535 702 79 18
 
 ## Services
 
+- AI Solutions: custom chatbots and AI assistants, integration of large language models (ChatGPT, Claude, Gemini) into existing software, AI-powered business process automation, machine learning models.
 - Web Development: responsive, fast, SEO-optimized and secure websites built with modern technologies.
 - Mobile App Development: native and cross-platform apps for iOS and Android.
 - UI/UX Design: user-centered, functional interface design.
 - Cloud Solutions: scalable, secure systems on AWS, Microsoft Azure and Google Cloud.
 - Cyber Security: security solutions including penetration testing and security audits.
-- Data Analytics: AI and machine-learning powered analytics.
+- Data Analytics: turning data into meaningful insights for better decisions.
+
+## Technologies
+
+React, Next.js, Flutter, React Native, .NET, C#
 
 ## Pages
 
-- [Ana sayfa (Türkçe)](https://factech.app/): Turkish homepage with services, about, FAQ and contact.
-- [Homepage (English)](https://factech.app/en/): English homepage with services, about, FAQ and contact.
+- [Ana sayfa (Türkçe)](https://factech.app/): Turkish homepage with services, about, team, FAQ and contact.
+- [Homepage (English)](https://factech.app/en/): English homepage with services, about, team, FAQ and contact.
 
 ## Contact
 
