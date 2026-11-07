@@ -3,7 +3,9 @@
   "trailingSlash": true,
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true },
-    { "source": "/tr", "destination": "/", "permanent": true }
+    { "source": "/tr", "destination": "/", "permanent": true },
+    { "source": "/tr/", "destination": "/", "permanent": true },
+    { "source": "/en/index.html", "destination": "/en/", "permanent": true }
   ],
   "headers": [
     {
