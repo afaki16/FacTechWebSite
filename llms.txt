@@ -1,12 +1,12 @@
 # FacTech
 
-> FacTech is a software company based in Bursa, Turkey, founded in 2026 by software engineer Alperen FAKI. It builds AI solutions (chatbots, AI assistants, LLM integrations, business process automation, machine learning models), web applications, iOS and Android mobile apps, UI/UX designs and cloud systems, and provides cyber security and data analytics services. FacTech works in Turkish and English and offers 24/7 support.
+> FacTech is a software studio based in Bursa, Türkiye, founded in 2026 by software engineer Alperen FAKI. It builds web applications, iOS and Android mobile apps, UI/UX designs and AI & automation solutions (custom models trained on company data, voice AI assistants, workflow automation), working as one team from design to launch for SMEs and enterprises. FacTech works in Turkish and English and offers 24/7 support.
 
 ## Company facts
 
-- Name: FacTech
+- Name: FacTech (Technology & Software Solutions)
 - Website: https://factech.app/
-- Location: Bursa, Turkey
+- Location: Bursa, Türkiye
 - Founded: 2026
 - Founder: Alperen FAKI, Founder & Software Engineer (5+ years of software development experience) — LinkedIn: https://www.linkedin.com/in/alperen-faki/
 - Instagram: https://www.instagram.com/factech.app/
@@ -17,22 +17,34 @@
 
 ## Services
 
-- AI Solutions: custom chatbots and AI assistants, integration of large language models (ChatGPT, Claude, Gemini) into existing software, AI-powered business process automation, machine learning models.
-- Web Development: responsive, fast, SEO-optimized and secure websites built with modern technologies.
-- Mobile App Development: native and cross-platform apps for iOS and Android.
-- UI/UX Design: user-centered, functional interface design.
-- Cloud Solutions: scalable, secure systems on AWS, Microsoft Azure and Google Cloud.
-- Cyber Security: security solutions including penetration testing and security audits.
-- Data Analytics: turning data into meaningful insights for better decisions.
+- Web Development: high-performance, maintainable web products on modern frameworks, from corporate sites and landing pages to SaaS dashboards and admin panels. Core Web Vitals-driven performance, multilingual & SEO foundation, integrations. (Next.js, React, Vue, .NET, PostgreSQL)
+- Mobile App Development: iOS and Android apps from one codebase with Flutter and React Native; App Store & Google Play release, push, payments, offline support, analytics and post-launch maintenance. (Flutter, React Native, Firebase, Swift)
+- UI/UX Design: user research, flows, interactive prototypes and dev-ready design systems. (Figma, design tokens)
+- AI & Automation: custom models fine-tuned on company data (fine-tuning + RAG), voice AI assistants for phone, call center and mobile (speech recognition, natural voice, real-time replies), document/email/call-center automation, ERP/CRM integration. (OpenAI, Python, Whisper/TTS, vector databases)
+
+## How we work
+
+1. Discovery (1 week): goals, users, constraints; clear scope and proposal.
+2. Design (1–3 weeks): flows, prototype and visual language; code after approval.
+3. Build (2-week sprints): a working demo at the end of every sprint; tests and CI/CD from day one.
+4. Launch & Care (ongoing): release, monitoring, iteration; SLA-backed support options.
+
+New project inquiries get an assessment and roadmap within 48 hours.
+
+## Selected work
+
+- Dernify: document and member management for associations; multi-tenant web panel and mobile app (Expo). Web + iOS + Android.
+- Theetify: SaaS platform on .NET 8 Web API + Nuxt 3; Clean Architecture, JWT authentication.
+- Voice customer assistant: a voice assistant answering order and appointment questions for a call center.
 
 ## Technologies
 
-React, Next.js, Flutter, React Native, .NET, C#
+React, Next.js, Vue, Nuxt, .NET, Node.js, PostgreSQL, Flutter, React Native, Firebase, Swift, AWS, Docker, Kubernetes, OpenAI, Python, Figma
 
 ## Pages
 
-- [Ana sayfa (Türkçe)](https://factech.app/): Turkish homepage with services, about, team, FAQ and contact.
-- [Homepage (English)](https://factech.app/en/): English homepage with services, about, team, FAQ and contact.
+- [Ana sayfa (Türkçe)](https://factech.app/): services, process, selected work, about & founder, FAQ, contact.
+- [Homepage (English)](https://factech.app/en/): the same content in English.
 
 ## Contact
 

@@ -5,17 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sayfa bulunamadı | FacTech</title>
     <meta name="robots" content="noindex">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <meta name="theme-color" content="#0a1020">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@600&family=Plus+Jakarta+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <style>
+        .nf{min-height:100vh;display:grid;place-items:center;padding:24px;position:relative;overflow:hidden;text-align:center}
+        .nf::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(62,198,222,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(62,198,222,.06) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(60% 50% at 50% 40%,#000 30%,transparent 100%)}
+        .nf>div{position:relative}
+        .nf-code{font:600 13px 'JetBrains Mono',monospace;letter-spacing:2px;color:#3ec6de;margin-bottom:14px}
+        .nf h1{font:800 clamp(32px,5vw,52px)/1.1 'Plus Jakarta Sans',sans-serif;letter-spacing:-1.5px;color:#fff;margin:0 0 14px}
+        .nf p{color:#a9b7cf;font-size:17px;margin:0 0 28px}
+        .nf-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+        .nf-actions a{padding:13px 24px;border-radius:12px;font-weight:700;font-size:15px}
+        .nf-primary{background:#3ec6de;color:#06141f!important}
+        .nf-secondary{border:1px solid rgba(255,255,255,.14);color:#e5ecf6!important}
+    </style>
 </head>
 <body>
-    <main class="hero" style="margin-top:0">
-        <div class="hero-content">
-            <h1>404</h1>
-            <p style="opacity:1;animation:none">Aradığınız sayfa bulunamadı. / The page you are looking for could not be found.</p>
-            <div class="hero-buttons" style="opacity:1;animation:none">
-                <a href="/" class="btn-primary">Ana Sayfa</a>
-                <a href="/en/" class="btn-secondary">Home (EN)</a>
+    <main class="nf">
+        <div>
+            <div class="nf-code">404</div>
+            <h1>Sayfa bulunamadı</h1>
+            <p>Aradığınız sayfa taşınmış ya da kaldırılmış olabilir. / The page could not be found.</p>
+            <div class="nf-actions">
+                <a class="nf-primary" href="/">Ana sayfa</a>
+                <a class="nf-secondary" href="/en/">Home (EN)</a>
             </div>
         </div>
     </main>

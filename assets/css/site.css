@@ -1,0 +1,111 @@
+/* FacTech — base styles for the dark design.
+   Most layout lives in inline styles (exported from the original design);
+   this file holds the base, keyframes, hover states and the sections added later. */
+
+html,body{margin:0;padding:0;background:#0a1020;color:#e5ecf6;font-family:'IBM Plex Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+*{box-sizing:border-box}
+a{color:#3ec6de;text-decoration:none}a:hover{color:#7fdcec}
+section[id],[id="web"],[id="mobile"],[id="design"],[id="ai"]{scroll-margin-top:90px}
+
+@keyframes ftFade{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes ftFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes ftDash{to{stroke-dashoffset:0}}
+@keyframes ftBar{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes ftType{from{width:0}to{width:100%}}
+@keyframes ftBlink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes ftPulse{0%,100%{box-shadow:0 0 0 0 rgba(62,198,222,.55)}70%{box-shadow:0 0 0 10px rgba(62,198,222,0)}}
+@keyframes ftFlow{from{stroke-dashoffset:40}to{stroke-dashoffset:0}}
+@keyframes ftMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes ftPop{0%{opacity:0;transform:translateY(8px) scale(.96)}100%{opacity:1;transform:none}}
+@keyframes ftPipe{0%,20%{background:#1d2b47;color:#7f92b3}30%,100%{background:#3ec6de;color:#06141f}}
+@keyframes ftOrbit{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes ftGridMove{from{background-position:0 0}to{background-position:0 48px}}
+@keyframes ftScan{0%{top:-10%}100%{top:110%}}
+@keyframes ftWave{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+@keyframes ftWordIn{0%{opacity:0;transform:translateY(110%) rotateX(-40deg)}100%{opacity:1;transform:none}}
+@keyframes ftWordOut{0%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-110%) rotateX(40deg)}}
+
+/* ---------- hover states (were runtime-generated) ---------- */
+.scp0,.scp1,.scp2,.scp6,.scp7{transition:color .2s,background .2s,border-color .2s,transform .2s}
+.scp0:hover{color:#fff!important;background:rgba(255,255,255,.06)!important}
+.scp1:hover{transform:translateY(-2px);color:#06141f!important;background:#5fd3e7!important}
+.scp2:hover{background:rgba(255,255,255,.06)!important;color:#fff!important}
+.scp3:hover{transform:translateY(-6px)!important;border-color:rgba(62,198,222,.45)!important;background:linear-gradient(180deg,rgba(62,198,222,.1),rgba(255,255,255,.02))!important;color:#fff!important}
+.scp4:hover{transform:translateY(-6px)!important;border-color:rgba(62,198,222,.4)!important}
+.scp5:hover{transform:translateY(-2px);color:#0a1020!important}
+.scp6:hover{border-color:rgba(62,198,222,.5)!important;color:#fff!important}
+.scp7:hover{color:#fff!important}
+
+/* ---------- scroll reveal (JS only; content stays visible without JS) ---------- */
+.js [data-reveal]{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1),border-color .25s,background .25s}
+.js [data-reveal].is-visible{opacity:1;transform:none}
+
+/* hero word rotator: width reserved via CSS so the sizer text is not part of the h1 */
+.rot-sizer::before{content:attr(data-text)}
+
+/* ---------- a11y ---------- */
+.skip-link{position:absolute;left:16px;top:-60px;z-index:100;padding:10px 18px;border-radius:10px;background:#3ec6de;color:#06141f;font-weight:700;transition:top .2s}
+.skip-link:focus{top:16px;color:#06141f}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #3ec6de;outline-offset:3px;border-radius:6px}
+
+/* ---------- project card visuals ---------- */
+.case-visual{position:absolute;inset:0;background-color:#0b1424;background-image:linear-gradient(rgba(62,198,222,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(62,198,222,.07) 1px,transparent 1px);background-size:32px 32px}
+.case-visual::after{content:'';position:absolute;inset:0}
+.case-visual--1::after{background:radial-gradient(70% 80% at 80% 20%,rgba(62,198,222,.35),transparent 60%),radial-gradient(60% 70% at 10% 100%,rgba(106,169,255,.25),transparent 60%)}
+.case-visual--2::after{background:radial-gradient(70% 80% at 20% 10%,rgba(199,146,234,.32),transparent 60%),radial-gradient(60% 70% at 90% 100%,rgba(62,198,222,.22),transparent 60%)}
+.case-visual--3::after{background:radial-gradient(70% 80% at 70% 30%,rgba(62,224,160,.3),transparent 60%),radial-gradient(60% 70% at 0% 100%,rgba(62,198,222,.22),transparent 60%)}
+
+/* ---------- shared section styles (About / FAQ) ---------- */
+.ft-section{padding:80px 24px}
+.ft-wrap{max-width:1200px;margin:0 auto}
+.ft-label{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#3ec6de;font-weight:700;margin-bottom:14px}
+.ft-h2{font:800 clamp(30px,4vw,46px)/1.1 'Plus Jakarta Sans',sans-serif;letter-spacing:-1.4px;color:#fff;margin:0 0 16px;text-wrap:balance}
+.ft-lead{font-size:17px;line-height:1.7;color:#a9b7cf;margin:0 0 26px;max-width:560px}
+
+.ft-about{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:48px;align-items:center}
+.ft-chips{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.ft-chips li{font:500 12.5px 'JetBrains Mono',monospace;padding:7px 12px;border-radius:8px;background:rgba(62,198,222,.08);border:1px solid rgba(62,198,222,.25);color:#7fdcec}
+
+.ft-founder{display:flex;gap:26px;align-items:center;padding:32px;border-radius:24px;background:#0e1628;border:1px solid rgba(255,255,255,.07);position:relative;overflow:hidden}
+.ft-founder::before{content:'';position:absolute;right:-120px;top:-120px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(62,198,222,.22),transparent 65%);pointer-events:none}
+.ft-founder>*{position:relative}
+.ft-founder-photo{flex:0 0 auto;width:120px;height:120px;border-radius:50%;padding:3px;background:linear-gradient(135deg,#3ec6de,#6aa9ff);box-shadow:0 10px 30px rgba(62,198,222,.25)}
+.ft-founder-photo img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover;background:#fff}
+.ft-founder-name{font:800 24px 'Plus Jakarta Sans',sans-serif;letter-spacing:-.5px;color:#fff;margin:0}
+.ft-founder-role{font:600 12px 'JetBrains Mono',monospace;color:#3ec6de;margin:6px 0 12px}
+.ft-founder-bio{font-size:14.5px;line-height:1.65;color:#a9b7cf;margin:0 0 14px}
+.ft-founder-link{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#7fdcec}
+.ft-founder-link:hover{color:#fff}
+
+.ft-faq{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:48px;align-items:start}
+.ft-faq-list{display:grid;gap:10px;grid-column:span 2}
+.ft-faq-item{border-radius:14px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);transition:border-color .2s,background .2s}
+.ft-faq-item[open]{border-color:rgba(62,198,222,.35);background:rgba(62,198,222,.05)}
+.ft-faq-item summary{cursor:pointer;list-style:none;padding:18px 20px;display:flex;justify-content:space-between;gap:16px;align-items:center;font:700 16px 'Plus Jakarta Sans',sans-serif;color:#fff}
+.ft-faq-item summary::-webkit-details-marker{display:none}
+.ft-faq-item summary::after{content:'+';font:500 22px 'JetBrains Mono',monospace;color:#3ec6de;transition:transform .2s;flex:0 0 auto}
+.ft-faq-item[open] summary::after{transform:rotate(45deg)}
+.ft-faq-item p{margin:0;padding:0 20px 18px;font-size:15px;line-height:1.7;color:#a9b7cf}
+
+.ft-social{list-style:none;display:flex;gap:10px;margin:0;padding:0}
+.ft-social a{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;color:#b7c4d9;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);transition:color .2s,background .2s,border-color .2s}
+.ft-social a:hover{color:#06141f;background:#3ec6de;border-color:#3ec6de}
+
+@media (max-width:820px){
+  .ft-faq-list{grid-column:auto}
+}
+/* phones: keep the header to one row (logo + language toggle); sections are reachable by scrolling and via the footer */
+@media (max-width:640px){
+  header nav a.scp0{display:none}
+}
+@media (max-width:560px){
+  .ft-section{padding:60px 20px}
+  .ft-founder{flex-direction:column;text-align:center;padding:28px 22px}
+}
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion:reduce){
+  html,body{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .js [data-reveal]{opacity:1;transform:none}
+}
