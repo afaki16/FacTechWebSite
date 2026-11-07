@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="200" cy="200" r="180" fill="#1976D2" />
+  <g transform="translate(40, 0)">
+    <path d="M220,150 C230,120 235,100 235,80 C235,60 225,50 210,50 C195,50 185,60 180,80
+            C175,60 165,50 150,50 C135,50 125,60 120,80
+            C115,60 105,50 90,50 C75,50 65,60 60,80
+            C55,60 45,50 30,50 C15,50 5,60 5,80
+            C5,110 15,140 25,170 C35,200 45,230 60,260
+            C75,290 95,320 120,330 C145,320 165,290 180,260
+            C195,230 205,200 215,170 C225,140 230,120 220,150 Z"
+          fill="white" stroke="#1976D2" stroke-width="4" />
+    <path d="M60,260 C75,290 95,320 120,330 L115,350 L85,340 L60,350 Z" fill="#f2f2f2" stroke="#1976D2" stroke-width="4" />
+    <path d="M180,260 C165,290 145,320 120,330 L125,350 L155,340 L180,350 Z" fill="#f2f2f2" stroke="#1976D2" stroke-width="4" />
+    <ellipse cx="90" cy="180" rx="15" ry="20" fill="#1976D2" />
+    <ellipse cx="150" cy="180" rx="15" ry="20" fill="#1976D2" />
+    <circle cx="85" cy="175" r="5" fill="white" />
+    <circle cx="145" cy="175" r="5" fill="white" />
+    <path d="M70,220 C90,245 130,245 150,220" fill="none" stroke="#1976D2" stroke-width="6" stroke-linecap="round" />
+    <circle cx="65" cy="210" r="10" fill="#ffcccc" opacity="0.7" />
+    <circle cx="155" cy="210" r="10" fill="#ffcccc" opacity="0.7" />
+  </g>
+</svg>

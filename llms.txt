@@ -2,6 +2,8 @@
 
 > FacTech is a software studio based in Bursa, Türkiye, founded in 2026 by software engineer Alperen FAKI. It builds web applications, iOS and Android mobile apps, UI/UX designs and AI & automation solutions (custom models trained on company data, voice AI assistants, workflow automation), working as one team from design to launch for SMEs and enterprises. FacTech works in Turkish and English and offers 24/7 support.
 
+Note: FacTech (factech.app, Bursa, Türkiye) is a different company from Factech Automation Solutions Pvt. Ltd. (Noida, India), a facility management software firm.
+
 ## Company facts
 
 - Name: FacTech (Technology & Software Solutions)
