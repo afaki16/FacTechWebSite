@@ -7,6 +7,7 @@ içeriği JavaScript çalıştırmadan okuyabilsin diye tüm metin düz HTML'ded
 |---|---|
 | `/` (`index.html`) | Türkçe ana sayfa (varsayılan, `x-default`) |
 | `/en/` (`en/index.html`) | İngilizce ana sayfa |
+| `/bot/`, `/en/bot/` (`bot/index.html`, `en/bot/index.html`) | SiteRadarBot bilgi sayfası (botun ne yaptığı, robots.txt, nasıl engellenir). SiteRadar'ın User-Agent'ındaki adres (`Audit:BotInfoUrl`) |
 | `assets/css/site.css` | Temel stiller, animasyonlar, hover durumları, Hakkımızda / SSS bölümleri |
 | `assets/js/site.js` | Kayarak belirme, dönen kelime, hero eğim efekti, dil tercihi |
 | `assets/img/` | Logo işareti ve kurucu fotoğrafı |

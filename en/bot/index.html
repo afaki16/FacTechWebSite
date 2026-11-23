@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteRadarBot | FacTech</title>
+    <meta name="description" content="SiteRadarBot is the bot of FacTech's site analysis tool. What it does, how it follows robots.txt and how to block it.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a1020">
+    <meta name="color-scheme" content="dark">
+    <link rel="canonical" href="https://factech.app/en/bot/">
+    <link rel="alternate" hreflang="tr" href="https://factech.app/bot/">
+    <link rel="alternate" hreflang="en" href="https://factech.app/en/bot/">
+    <link rel="alternate" hreflang="x-default" href="https://factech.app/bot/">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <style>
+        .bot{max-width:760px;margin:0 auto;padding:56px 20px 80px;line-height:1.65}
+        .bot a{color:#6ab0ff}
+        .bot h1{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:2rem;margin:0 0 8px}
+        .bot h2{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:1.2rem;margin:36px 0 8px}
+        .bot p,.bot li{color:#c9d4e3}
+        .bot code,.bot pre{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:.9rem}
+        .bot pre{background:#121a2e;border:1px solid #23304d;border-radius:12px;padding:14px 16px;overflow-x:auto;color:#e5ecf6}
+        .bot code{background:#121a2e;border-radius:6px;padding:1px 6px}
+        .bot pre code{background:none;padding:0}
+        .bot .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:40px;font-size:.95rem}
+    </style>
+</head>
+<body>
+<main class="bot">
+    <div class="top">
+        <a href="/en/">FacTech</a>
+        <a href="/bot/" hreflang="tr" lang="tr">Türkçe</a>
+    </div>
+
+    <h1>SiteRadarBot</h1>
+    <p>SiteRadarBot is the bot of SiteRadar, FacTech's site analysis tool. It appears in your server logs as:</p>
+    <pre><code>SiteRadarBot/1.0 (+https://factech.app/bot/)</code></pre>
+
+    <h2>What does it do?</h2>
+    <ul>
+        <li>It reads a site's public pages to check their technical state: page titles, links that don't open, the sitemap and similar.</li>
+        <li>It runs occasionally, one analysis at a time; it is not a search engine crawler that visits continuously.</li>
+        <li>It is slow on purpose: at most 2 requests at the same time and at least 1 second between requests. When a site gets slower it slows down further, and when the site asks it to wait (429 / 503) it waits.</li>
+        <li>It does not log in, fill in forms or run JavaScript. It does not store whole pages, only technical details such as titles.</li>
+    </ul>
+
+    <h2>It follows robots.txt</h2>
+    <p>Our bot follows the <code>SiteRadarBot</code> rules in your <code>robots.txt</code>, or the <code>User-agent: *</code> rules when that name is not listed. It also respects <code>Crawl-delay</code>. It does not open pages you have disallowed.</p>
+
+    <h2>How to block it</h2>
+    <p>To keep our bot away from your whole site, add this to your <code>robots.txt</code>:</p>
+    <pre><code>User-agent: SiteRadarBot
+Disallow: /</code></pre>
+    <p>To close only part of the site, use a path such as <code>Disallow: /section/</code>.</p>
+
+    <h2>Contact</h2>
+    <p>If you have a problem or a question about our bot, write to <a href="mailto:info@factech.app">info@factech.app</a>.</p>
+</main>
+</body>
+</html>
